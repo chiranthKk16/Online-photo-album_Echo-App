@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="30dp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/individual_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@drawable/placeholderalbum"
+            android:adjustViewBounds="true"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/album_name_individual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Album name"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_below="@id/card_view"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

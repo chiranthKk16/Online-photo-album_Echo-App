@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Echo</string>
+    <string name="register_now"><u>Register now</u></string>
+    <string name="login_now"><u>Login now</u></string>
+</resources>
